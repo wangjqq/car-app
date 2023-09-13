@@ -1,10 +1,10 @@
 import React from 'react'
 import { View } from '@tarojs/components'
-import { Joystick } from 'react-joystick-component'
 import { useDispatch, useSelector } from 'react-redux'
 import { setPwm } from '../../store/reducers'
 import './index.less'
 import { IPwmState } from './type'
+import Joystick from './component/joystick'
 
 const My: React.FC = () => {
   const dispatch = useDispatch()
@@ -42,12 +42,14 @@ const My: React.FC = () => {
       dispatch(setPwm({ left: 0, right: 0 }))
     }
   }
-
+  const onChange = (e) => {
+    // console.log(e)
+  }
   return (
     <View>
       left:{pwm.left}
       right:{pwm.right}
-      <Joystick size={200} baseColor="#EEEEEE" stickColor="#000000" move={setPWMByJoystick} />
+      <Joystick onChange={onChange} size={100}></Joystick>
     </View>
   )
 }
