@@ -3,7 +3,7 @@ import { View } from '@tarojs/components'
 import { Button } from '@nutui/nutui-react-taro'
 import './index.less'
 
-function My() {
+const My: React.FC = () => {
   return (
     <View className="nutui-react-demo">
       <View className="My">欢迎使用 NutUI React 开发 Taro 多端项目。</View>

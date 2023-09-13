@@ -39,6 +39,7 @@
     "@babel/runtime": "^7.7.7",
     "@nutui/icons-react-taro": "^0.0.1",
     "@nutui/nutui-react-taro": "^2.0.15",
+    "@reduxjs/toolkit": "^1.9.5",
     "@tarojs/components": "3.6.16",
     "@tarojs/helper": "3.6.16",
     "@tarojs/plugin-framework-react": "3.6.16",
@@ -56,6 +57,8 @@
     "@tarojs/taro": "3.6.16",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-joystick-component": "^6.2.1",
+    "react-redux": "^8.1.2",
     "react-refresh": "^0.11.0"
   },
   "devDependencies": {

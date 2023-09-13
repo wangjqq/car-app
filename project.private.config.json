@@ -3,5 +3,6 @@
   "projectname": "car-app",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.0.2"
 }
